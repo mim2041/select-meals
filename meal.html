@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Have a meal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+        .card-group{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="text-center text-danger">Are you hungry?</h1>
+    </header>
+    <main>
+        <section class="text-center">
+            <input id="search-food" placeholder="Enter your meal" type="text">
+            <button onclick="loadSearchedFood()" class="btn btn-primary" onclick="loadSearchedMeals()">search</button>
+        </section>
+        <h2 style="margin-left: 50px">Have your meal.</h2>
+        <section id="meals-container" class="card-group">
+            
+        </section>
+    </main>
+    <script src="js/meal.js"></script>
+</body>
+</html>
